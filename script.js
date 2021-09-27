@@ -42,9 +42,9 @@ drawingsTabButton.addEventListener("click",()=>{
     drawingContainer.classList.add("active");
     websiteContainer.classList.remove("active");
 })
-slides.forEach((slide,index)=>{
-    slide.style.left=index*slideWidth + 'px';
-})
+/*slides.forEach((slide,index)=>{///
+    slide.style.left=index*slideWidth + 'px';///
+})*/
 
 
 let slider=(container,currentSlide,nextorprevSlide)=>{
@@ -92,8 +92,8 @@ prevbtn.addEventListener("click",()=>{
 let webSlides=Array.from(websiteContainer.children);
 let webSlideWidth=webSlides[0].getBoundingClientRect().width;
 
-webSlides.forEach((slide,index)=>{
-    slide.style.left=index*webSlideWidth  +'px';
+/*webSlides.forEach((slide,index)=>{///
+    slide.style.left=index*webSlideWidth  +'px';///
 })
 
 /*nextbtn.addEventListener("click",()=>{
